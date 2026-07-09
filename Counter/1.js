@@ -1,5 +1,10 @@
 const plus = document.querySelector(".plus");
 const minus = document.querySelector(".minus");
-const num = document.querySelector(".number")
-plus.addEventListener('click',()=>{num.textContent++});
-minus.addEventListener('click',()=>{num.textContent--});
+const num = document.querySelector(".number");
+let count = 0;
+plus.addEventListener('click',()=>{
+    count++;
+    num.textContent = count});
+minus.addEventListener('click',()=>{
+    count--;
+    num.textContent = count});
